@@ -1,15 +1,11 @@
 ---
-title: First New Post
+title: My R-Package
 author: ~
-date: '2018-06-12'
+date: '2018-06-14'
 slug: first-new-post
 categories: []
 tags: []
 ---
-```{r}
-x<-10
-print(x)
 ```
-```{r}
-plot(1:10)
+For my r package, I made a function that converts weights, distances, and temperatures from standard units to metric units.
 ```
