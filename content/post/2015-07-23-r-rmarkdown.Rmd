@@ -1,25 +1,36 @@
 ---
-title: "Hello R Markdown"
-author: "Frida Gomam"
+title: "My first R package"
+author: "Radhika Srivastava"
 date: 2015-07-23T21:13:14-05:00
 categories: ["R"]
 tags: ["R Markdown", "plot", "regression"]
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(collapse = TRUE)
-```
 
-# R Markdown
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+## The Conversion Package
 
-You can embed an R code chunk like this:
+When creating my first package in R, I wanted to make a something that would make truly be useful and have adequate functionality. Over the past few weeks I have been in Cape Town, I realized that it would be useful to have a tool to convert standard units used in America, to metric units used in South America (and the rest of the world). So, I decided to make a R package that would do just that. 
 
-```{r cars}
-summary(cars)
-fit <- lm(dist ~ speed, data = cars)
-fit
+Here is the code for the function that I used to make my package:
+
+```{r}
+conversion <- function(type,value)
+  {
+  if(type=="w")
+  {print("Weight Conversion")
+    return(value * 0.453592)}
+  else if(type=="d")
+  {print("Distance Conversion")
+    return(value * 0.3048)}
+  else if (type=="t")
+  {print("Temperature Conversion")
+      return((value-32)*.5556)}
+  else {
+    (print("Invalid Conversion Type"))
+    return (-1)
+  }
+}
 ```
 
 # Including Plots
