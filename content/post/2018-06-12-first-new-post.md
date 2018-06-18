@@ -30,3 +30,7 @@ conversion <- function(type,value)
   }
 }
 ```
+
+This function allows for two inputs, the first is the type of conversion, either, weight (w), distance (d), or temperature (t), and the second is the value, in standard units. If the conversion type is not w,d, or t, then the function will return Invalid Conversion Type and a value of -1. 
+
+This function was a good way to make an introductory package, because it allows for multiple inputs, but is not too difficult to implement. I hope in the future to make some more complex packages that work with large data sets as well. 
