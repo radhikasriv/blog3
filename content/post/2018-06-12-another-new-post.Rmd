@@ -6,10 +6,3 @@ slug: another-new-post
 categories: []
 tags: []
 ---
-```{r}
-x<-10
-print(x)
-```
-```{r}
-plot(1:10)
-```
