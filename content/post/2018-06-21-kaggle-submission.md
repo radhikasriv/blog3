@@ -7,7 +7,7 @@ For this Kaggle project, we are attempting to predict whether or not people will
 
 Here is the code for my highest submission:
 
-
+First I loaded up all the packages I would need to make my model and test it. I added several packages as I worked for added functionality.For example, in order to plot the data, I loaded ggplot2, and to test my model, I loaded the caret package. 
 ```r
 library(readr)
 library(ISLR)
@@ -22,9 +22,10 @@ library(digest)
 library(Metrics)
 library(caret)
 library(rpart)
-
 library(dplyr)
 library(ROCR)
+```
+```r
 load_application <- function(fileName) {
   read.csv(fileName) %>% setNames(names(.) %>% tolower())
 }
@@ -79,7 +80,15 @@ test$TARGET = predict(fit, test, type = "response")
 test$TARGET = predict(fit_1, test, type = "prob")
 possibility <- data.frame(SK_ID_CURR = test$sk_id_curr, TARGET = test$TARGET)
 head(possibility)
+```
+Finally, I wrote my model labeled "possbility" to a csv so I could finally submit it to Kaggle. 
+```r
+
 write.csv(possibility, "possibility.csv", row.names = FALSE)
 
 ```
 After I made my model using the varimp function, and by replacing the NAs with the mean, I used the caret function to check my ROC so that I wouldn't have to repeatedly submit onto Kaggle. Now, I plan to use feature engineering to implement the other data sets in my model as well. 
+
+This is just one example of a Kaggle competition, but there are so many more you can participate in to practice your machine learning skills. Here is a link to a list of some competitions: 
+<https://www.kaggle.com/competitions>
+If you are just getting started with Kaggle, a good competition to enter is the [Titanic competition](https://www.kaggle.com/c/titanic). This is a good competition to learn more about Kaggle basics and machine learning, as there are several resources on how to build your model. 
