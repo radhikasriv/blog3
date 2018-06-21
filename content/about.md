@@ -12,4 +12,4 @@ When I'm not studying at school, I am heavily involved in my campus community. I
 
 I'm so excited for the rest of my summer and for my next three years of college to see what I can learn and what new experiences I can have!
 
-<img src="/./about_files/thanks.jpg" alt="" width="60%" class="center"/>
+<img src="/./about_files/thanks.jpg" alt="" class="center" width="60%" />
