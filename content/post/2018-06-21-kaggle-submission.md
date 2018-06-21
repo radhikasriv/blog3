@@ -3,10 +3,12 @@ title: "My First Kaggle Competition"
 date: "2018-06-18T21:49:57-07:00"
 ---
 For my first Kaggle submission, I joined the Home Credit Default Risk competition. 
-For this project, we are attempting to predict how capable a client is at repaying a loan. To estimate this, we use a training and testing data to build a machine learning model to give as accurate of an estimate we can as to whether the loan will be paid back or not. Here are the steps for my highest submission: 
-#In my submission, I used a linear regression (glm) model. To increase my score, I used variables in the training data that have higher weights, which I found using the VAR IMP() function. This function showed me variables in my model have the highest importance, for example, ext source 2 has a very high weight and by adding it to my model, ROC which measures my accuracy improved my score a lot. Next, I replaced all the "NA" values in my data with the mean of each column, so that I could still use those columns in my predicition. This allowed me to use a lot more columns then I originally could.
+For this project, we are attempting to predict how capable a client is at repaying a loan. To estimate this, we use a training and testing data to build a machine learning model to give as accurate of an estimate we can as to whether the loan will be paid back or not. 
 
-#Here is the code for my highest submission:
+
+**Here are the steps for my highest submission:** 
+
+
 
 First I loaded up all the packages I would need to make my model and test it. I added several packages as I worked for added functionality.For example, in order to plot the data, I loaded ggplot2, and to test my model, I loaded the caret package. 
 ```r
@@ -97,8 +99,8 @@ write.csv(possibility, "possibility.csv", row.names = FALSE)
 ```
 
 This is just one example of a Kaggle competition, but there are so many more you can participate in to practice your machine learning skills. Here is a link to a list of some competitions: 
-<https://www.kaggle.com/competitions>
 
+<https://www.kaggle.com/competitions>
 
 If you are just getting started with Kaggle, a good competition to enter is the [Titanic competition](https://www.kaggle.com/c/titanic). 
 This is a good competition to learn more about Kaggle basics and machine learning, as there are several resources on how to build your model. 
