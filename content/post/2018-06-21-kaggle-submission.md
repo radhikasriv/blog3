@@ -94,8 +94,11 @@ Finally, I wrote my model labeled "possbility" to a csv so I could finally submi
 write.csv(possibility, "possibility.csv", row.names = FALSE)
 
 ```
+```
 
 This is just one example of a Kaggle competition, but there are so many more you can participate in to practice your machine learning skills. Here is a link to a list of some competitions: 
 <https://www.kaggle.com/competitions>
+
+
 If you are just getting started with Kaggle, a good competition to enter is the [Titanic competition](https://www.kaggle.com/c/titanic). 
 This is a good competition to learn more about Kaggle basics and machine learning, as there are several resources on how to build your model. 
